@@ -10,6 +10,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="sec1">
@@ -21,9 +27,25 @@
         <ul class="nav_links">
           <li><a href="#">Books</a></li>
           <li><a href="#">Courses</a></li>
-          <li><a href="#">Others</a></li>
+          <li><a href="#" class="others">Others</a></li>
           <li><a href="#" class="blogs">Blogs</a></li>
-          <a class="button" href="#">Sign In</a>
+          <button
+            class="btn btn-success"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanexp"
+          >
+            Sign In
+          </button>
+          <div class="offcanvas offcanvas-start" id="offcanexp">
+            Hey There! Welcome to my webpage. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Consequuntur, eius ad necessitatibus
+            architecto sit aspernatur iusto molestiae illo repellendus at enim
+            consectetur, voluptatibus explicabo doloribus asperiores soluta.
+            Quae veritatis nostrum, accusamus architecto velit iusto culpa
+            assumenda. Ipsam dolore repellendus nulla unde velit sapiente fugit
+            adipisci dicta corporis voluptatem, voluptatibus in.
+            <img src="./Photos/Illustration.png" alt="" />
+          </div>
         </ul>
       </div>
       <div class="content">
@@ -38,7 +60,16 @@
             adipisicing elit. Dolores tempora repudiandae.
           </p>
           <br />
-          <a class="btn" href="#">Get Started</a>
+          <button
+            class="btn btn-success"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanexp"
+          >
+            Get Started
+          </button>
+          <div class="offcanvas offcanvas-start" id="offcanexp">
+            Hey You're Awesome! Have a good day!
+          </div>
         </div>
         <div class="div">
           <img
@@ -213,5 +244,10 @@
       </div>
       <p class="copy">Copyright &copy; 2021 by Rokomari.com</p>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
